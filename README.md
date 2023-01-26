@@ -19,6 +19,15 @@ sudo apt update \
 sudo apt install docker-ce
 ```
 
+raiso? cb ini cak
+```
+sudo apt update \
+sudo apt install docker.io curl -y \
+sudo systemctl start docker \
+sudo systemctl enable docker \
+sudo curl -L https://github.com/docker/compose/releases/download/$VERSION/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## 3. Add your user to docker Group.
 ```
