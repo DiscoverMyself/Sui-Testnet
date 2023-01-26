@@ -184,3 +184,7 @@ sudo systemctl restart suid
 ```
 journalctl -u suid -f
 ```
+
+
+how to check node status?
+here: https://www.scale3labs.com/check/sui
