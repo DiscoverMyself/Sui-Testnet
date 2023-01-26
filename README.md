@@ -57,6 +57,13 @@ wget -O $HOME/sui/docker-compose.yaml https://raw.githubusercontent.com/MystenLa
 sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/sui/docker-compose.yaml
 ```
 
+raiso? pake yg ini cak:
+```
+wget https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docker-compose.yaml
+wget https://github.com/MystenLabs/sui/raw/main/crates/sui-config/data/fullnode-template.yaml
+wget https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
+```
+
 ## 9. Start SUI Full Node in the Docker container.
 ```
 docker-compose up -d
@@ -64,8 +71,10 @@ docker-compose up -d
 
 ## 10. Check logs from SUI Node container:
 ```
-docker ps
+docker ps -a
 ```
+
+**run di screen:**
 ```
 docker logs -f <container id>
 ```
