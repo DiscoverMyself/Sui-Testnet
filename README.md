@@ -187,4 +187,11 @@ journalctl -u suid -f
 
 
 how to check node status?
+<br>
 here: https://www.scale3labs.com/check/sui
+<br>
+or
+<br>
+```
+curl -s -X POST http://127.0.0.1:9000 -H 'Content-Type: application/json'   --data-raw '{ "jsonrpc":"2.0", "method":"sui_getTotalTransactionNumber","id":1}' | jq 
+```
