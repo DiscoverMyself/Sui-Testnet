@@ -187,6 +187,7 @@ sudo systemctl restart suid
 journalctl -u suid -f
 ```
 
+## Useful Commands
 
 how to check node status?
 <br>
@@ -196,4 +197,14 @@ or
 <br>
 ```
 curl -s -X POST http://127.0.0.1:9000 -H 'Content-Type: application/json'   --data-raw '{ "jsonrpc":"2.0", "method":"sui_getTotalTransactionNumber","id":1}' | jq 
+```
+<br>
+<br>
+how to check TPS?
+```
+wget -O $HOME/check_testnet_tps.sh https://raw.githubusercontent.com/bartosian/sui_helpers/main/check_testnet_tps.sh && chmod +x $HOME/check_testnet_tps.sh && $HOME/check_testnet_tps.sh
+```
+then run:
+```
+$HOME/check_testnet_tps.sh
 ```
