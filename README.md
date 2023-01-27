@@ -1,5 +1,7 @@
 # Using Docker
 
+Update 27/01: https://github.com/DiscoverMyself/Sui-Testnet/blob/main/update.md
+
 ## 1. Install Linux dependencies.
 ```
 sudo apt update \
